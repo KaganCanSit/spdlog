@@ -43,7 +43,8 @@ function(spdlog_enable_warnings target_name)
                     -Wconversion
                     -pedantic
                     -Werror
-                    -Wfatal-errors>
+                    -Wfatal-errors
+                    -Wold-style-cast>
                     $<$<CXX_COMPILER_ID:MSVC>:${MSVC_OPTIONS}>)
     endif()
 endfunction()
